@@ -1,0 +1,115 @@
+# FernandoRepositorio
+#El siguiente repositorio contiene un archivo HTML sobre un webstore
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .cart {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Mi Tienda Web</h1>
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#products">Productos</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Inicio</h2>
+        <p>Bienvenido a la mejor tienda en línea. Aquí encontrarás productos de calidad al mejor precio.</p>
+    </section>
+
+    <section id="products">
+        <h2>Productos</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Precio: $10.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Precio: $15.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Precio: $20.00</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="cart">
+        <h2>Carrito de Compras</h2>
+        <p>No hay productos en el carrito.</p>
+    </section>
+</main>
+
+<footer>
+    <p>Contacto: contacto@mitienda.com | Tel: 123-456-7890</p>
+</footer>
+
+</body>
+</html>
